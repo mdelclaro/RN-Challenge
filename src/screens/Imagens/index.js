@@ -6,7 +6,6 @@ import { getChallenge } from "../../store/actions";
 
 class Imagens extends Component {
   renderItem(item) {
-    console.log(item.toString());
     return (
       <View
         style={{
@@ -15,7 +14,7 @@ class Imagens extends Component {
           justifyContent: "center",
           alignItems: "center"
         }}>
-        {/* <Image style={{ flex: 1 }} resizeMode="contain" source={item} /> */}
+        <Image style={{ flex: 1 }} resizeMode="contain" source={{ uri: item }} />
       </View>
     );
   }
